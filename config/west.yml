@@ -9,7 +9,6 @@ manifest:
       remote: zmkfirmware
       import: app/west.yml
     - name: my_5x15
-      path: modules/my_5x15
-      local: true   # <--- เพิ่มบรรทัดนี้
+      path: modules/my_5x15   # <--- แค่ระบุ path
   self:
     path: config
