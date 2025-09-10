@@ -10,5 +10,6 @@ manifest:
       import: app/west.yml
     - name: my_5x15
       path: modules/my_5x15
+      local: true   # <--- เพิ่มบรรทัดนี้
   self:
     path: config
