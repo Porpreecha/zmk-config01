@@ -4,14 +4,9 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: local
-      url-base: https://example.com/local.git   # ใส่ url ปลอม
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: my_5x15
-      remote: local       # ใช้ remote ปลอม
-      path: modules/my_5x15
   self:
     path: config
