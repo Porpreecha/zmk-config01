@@ -20,4 +20,5 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: tester_pro_micro
+    shield: my_5x15
+
