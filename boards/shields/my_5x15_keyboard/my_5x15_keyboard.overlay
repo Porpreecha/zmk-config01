@@ -1,40 +1,12 @@
-/*
- * Dummy overlay for 5x15 keyboard
- * SPDX-License-Identifier: MIT
- */
-
- / {
-    compatible = "zmk,shield";
-
+/ {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,rgb-strip = &rgb_strip;
     };
+};
 
-    kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-
-        /* 15 columns */
-        col-gpios = <&gp0 0 GPIO_ACTIVE_HIGH>, <&gp0 1 GPIO_ACTIVE_HIGH>,
-                    <&gp0 2 GPIO_ACTIVE_HIGH>, <&gp0 3 GPIO_ACTIVE_HIGH>,
-                    <&gp0 4 GPIO_ACTIVE_HIGH>, <&gp0 5 GPIO_ACTIVE_HIGH>,
-                    <&gp0 6 GPIO_ACTIVE_HIGH>, <&gp0 7 GPIO_ACTIVE_HIGH>,
-                    <&gp0 8 GPIO_ACTIVE_HIGH>, <&gp0 9 GPIO_ACTIVE_HIGH>,
-                    <&gp0 10 GPIO_ACTIVE_HIGH>, <&gp0 11 GPIO_ACTIVE_HIGH>,
-                    <&gp0 12 GPIO_ACTIVE_HIGH>, <&gp0 13 GPIO_ACTIVE_HIGH>,
-                    <&gp0 14 GPIO_ACTIVE_HIGH>;
-
-        /* 5 rows */
-        row-gpios = <&gp1 0 GPIO_ACTIVE_HIGH>, <&gp1 1 GPIO_ACTIVE_HIGH>,
-                    <&gp1 2 GPIO_ACTIVE_HIGH>, <&gp1 3 GPIO_ACTIVE_HIGH>,
-                    <&gp1 4 GPIO_ACTIVE_HIGH>;
-    };
-
-    rgb_strip: rgb_strip {
-        compatible = "zmk,ws2812";
-        chain-length = <75>;
-        label = "RGB Strip";
-        gpios = <&gp1 5 GPIO_ACTIVE_HIGH>;
-    };
+&kscan0 {
+    col-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+                <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    row-gpios = <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+                <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
