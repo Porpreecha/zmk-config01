@@ -1,6 +1,5 @@
 /*
- * Dummy shield overlay for 5x15 keyboard
- * Build-only, no actual hardware required
+ * Dummy overlay for 5x15 keyboard
  * SPDX-License-Identifier: MIT
  */
 
@@ -12,32 +11,30 @@
         zmk,rgb-strip = &rgb_strip;
     };
 
-    /* Dummy key matrix */
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
 
         /* 15 columns */
-        col-gpios = <&p0 0 GPIO_ACTIVE_HIGH>, <&p0 1 GPIO_ACTIVE_HIGH>,
-                    <&p0 2 GPIO_ACTIVE_HIGH>, <&p0 3 GPIO_ACTIVE_HIGH>,
-                    <&p0 4 GPIO_ACTIVE_HIGH>, <&p0 5 GPIO_ACTIVE_HIGH>,
-                    <&p0 6 GPIO_ACTIVE_HIGH>, <&p0 7 GPIO_ACTIVE_HIGH>,
-                    <&p0 8 GPIO_ACTIVE_HIGH>, <&p0 9 GPIO_ACTIVE_HIGH>,
-                    <&p0 10 GPIO_ACTIVE_HIGH>, <&p0 11 GPIO_ACTIVE_HIGH>,
-                    <&p0 12 GPIO_ACTIVE_HIGH>, <&p0 13 GPIO_ACTIVE_HIGH>,
-                    <&p0 14 GPIO_ACTIVE_HIGH>;
+        col-gpios = <&gp0 0 GPIO_ACTIVE_HIGH>, <&gp0 1 GPIO_ACTIVE_HIGH>,
+                    <&gp0 2 GPIO_ACTIVE_HIGH>, <&gp0 3 GPIO_ACTIVE_HIGH>,
+                    <&gp0 4 GPIO_ACTIVE_HIGH>, <&gp0 5 GPIO_ACTIVE_HIGH>,
+                    <&gp0 6 GPIO_ACTIVE_HIGH>, <&gp0 7 GPIO_ACTIVE_HIGH>,
+                    <&gp0 8 GPIO_ACTIVE_HIGH>, <&gp0 9 GPIO_ACTIVE_HIGH>,
+                    <&gp0 10 GPIO_ACTIVE_HIGH>, <&gp0 11 GPIO_ACTIVE_HIGH>,
+                    <&gp0 12 GPIO_ACTIVE_HIGH>, <&gp0 13 GPIO_ACTIVE_HIGH>,
+                    <&gp0 14 GPIO_ACTIVE_HIGH>;
 
         /* 5 rows */
-        row-gpios = <&p1 0 GPIO_ACTIVE_HIGH>, <&p1 1 GPIO_ACTIVE_HIGH>,
-                    <&p1 2 GPIO_ACTIVE_HIGH>, <&p1 3 GPIO_ACTIVE_HIGH>,
-                    <&p1 4 GPIO_ACTIVE_HIGH>;
+        row-gpios = <&gp1 0 GPIO_ACTIVE_HIGH>, <&gp1 1 GPIO_ACTIVE_HIGH>,
+                    <&gp1 2 GPIO_ACTIVE_HIGH>, <&gp1 3 GPIO_ACTIVE_HIGH>,
+                    <&gp1 4 GPIO_ACTIVE_HIGH>;
     };
 
-    /* Dummy RGB strip */
     rgb_strip: rgb_strip {
         compatible = "zmk,ws2812";
         chain-length = <75>;
         label = "RGB Strip";
-        gpios = <&p1 5 GPIO_ACTIVE_HIGH>;
+        gpios = <&gp1 5 GPIO_ACTIVE_HIGH>;
     };
 };
