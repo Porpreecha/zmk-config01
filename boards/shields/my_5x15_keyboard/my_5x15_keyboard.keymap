@@ -1,0 +1,38 @@
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/hid.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBRC  &kp RBRC  &kp SQT   &kp SEMI  &kp MINUS
+                &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+                &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   &kp N7  &kp N8  &kp N9  &kp N0  &kp F1  &kp F2  &kp F3  &kp F4
+                &kp LCTL  &kp LGUI  &kp LALT  &kp LSHFT  &mo 1   &kp TAB  &kp RET  &mo 2  &kp BSPC &kp DEL  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END  &kp ESC
+                &kp GRAVE  &kp BSLH  &kp FSLH  &kp COMMA  &kp DOT  &kp SLASH  &kp N9  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+};
