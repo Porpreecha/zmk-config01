@@ -5,7 +5,7 @@
         default_layer {
             bindings = <
                 /* Row 1 */
-                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &&trans   &trans 
+                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 2 */
                 &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &&trans   &trans 
                 /* Row 3 */
