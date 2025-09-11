@@ -7,11 +7,11 @@
                 /* Row 1 */
                 &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 2 */
-                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &&trans   &trans 
+                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 3 */
-                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &&trans   &trans 
+                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 4 */
-                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &&trans   &trans 
+                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 5 */
                 &kp LCTL &kp LGUI &kp LALT &trans   &trans   &kp SPC  &trans   &trans   &kp RALT &mo 1    &kp RCTL &kp LEFT &kp DOWN &kp RIGHT &kp HOME
             >;
