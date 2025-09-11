@@ -13,7 +13,7 @@
                 /* Row 4 */
                 &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans 
                 /* Row 5 */
-                &kp E 	&kp R 	&kp T	&kp Y  	&kp U  	&kp I	&kp O  &kp D 	&kp F 	&kp G	&kp H  	&kp J 	&kp K	&kp L &kp X 
+                &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
             >;
         };
     };
